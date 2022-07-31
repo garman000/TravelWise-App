@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Arimo&family=Josefin+Sans:wght@300&family=Rajdhani:wght@600&family=Roboto&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.ticket {
+	/* background-color: rgb(127, 119, 119); */
+	width: 700px;
+	height: 370px;
+	border: 5px double transparent;
+	border-radius: 20px;
+	background-image: linear-gradient(#000, #000),
+		linear-gradient(to right, #ec6193, #ffbc29, #53a0ec);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	position: relative;
+}
+
+.ticketProfile {
+	position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 160px;
+    padding-top: 44px;
+    padding-bottom: 41px;
+    padding-left: 31px;
+    border-right: 1px dashed #444444;
+}
+.ticketProfileTop {
+	width: 100%;
+	height: 82px;
+	display: flex;
+	align-items: center;
+}
+
+.ticketProfileTopText {
+    flex-grow: 1;
+    padding-top: 7rem;
+    flex-shrink: 1;
+}
+
+
+.ticketNumberWrapper {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 330px;
+}
+.ticketNumber {
+	transform: matrix(6.12323e-17, 1, -1, 6.12323e-17, -100, 6.12323e-15);
+    transform-origin: bottom right;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    background-image: url("https://res.cloudinary.com/dxnnbqdxy/image/upload/v1658063454/travelWiseWhite_uap6m3.png");
+    height: 24rem;
+    line-height: 98px;
+    width: 18rem;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 1rem;
+    right: 10rem;
+}
+
+.boardingCtl {
+	font-size: 1.8rem;
+    margin: 1.5rem auto 0.5rem;
+	font-family: 'Anek Malayalam', sans-serif;
+}
+
+.flightBtn {
+	padding: 0.5rem 1rem;
+    background-color: #D35820;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+	text-decoration: none;
+	margin-right: 1rem;
+	color: #fff;
+}
+.flightBtn:hover {
+	background-color: #fa8f5d ;
+    color: white;
+    font-weight: bold;
+}
+
+.counter {
+	width: 11rem; 
+	height: 12rem;
+	border: 5px solid black; 
+	display: flex; 
+	flex-direction: column;
+	align-items: center; 
+	justify-content: space-around;
+	
+}
+.counter > p {
+	font-size: 5rem;
+	display: flex;
+	justify-content: center;
+	margin: -1rem 24px -2rem 24px;
+                 
+}
+.ticketContainer {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.keyControl {
+	margin-top: 1rem;
+	display: flex; 
+	font-size: 1.4rem;
+	font-family: 'Oswald', sans-serif;
+}
+
+.valueControl {
+	margin-left: 1rem; 
+	font-size: 1.4rem; 
+	font-family: 'Oswald', sans-serif;
+}
+.airportCodes {
+	font-size: 2rem;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.google {
+	display: flex;
+    width: 100%;
+    height: 20rem;
+}

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Josefin+Sans:wght@300&family=Rajdhani:wght@600&family=Varela+Round&display=swap");
+
+.backgroundImg {
+  /* background-image: url("../public/pexels-bess-hamiti-36487.jpg"); */
+  background-image: url("https://res.cloudinary.com/dxnnbqdxy/image/upload/v1657401261/pexels-bess-hamiti-36487_hfdfdk.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.primaryButton {
+  background-color: transparent;
+  padding: 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 2rem;
+  color: #d35820;
+  font-size: 18px;
+  border: 3px solid #d35820;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.primaryButton:hover {
+  background-color: #d35820;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.boxCenter {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* .container {
+  font-family: "Rajdhani", sans-serif;
+  position: relative;
+  top: -50rem;
+  left: 30%;
+  transform: translate(-50%, -80%);
+  font-weight: bold;
+  width: 35%;
+  font-size: 3rem;
+} */
+
+.imageCtler {
+  position: relative;
+  bottom: 11rem;
+  z-index: 1;
+}
+.welcometext {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 4rem;
+  color: white;
+  padding-top: 18rem;
+  padding-left: 10rem;
+  width: 50%;
+}
+.welcometext > div:nth-child(2) {
+  color: black;
+  padding: 1rem 0 0 0;
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.imgCtl {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .welcometext {
+    position: relative;
+  }
+}
+
+@media (max-width: 500px) {
+  .imgCtl > .image {
+    display: none;
+  }
+
+  .backgroundImg {
+    background-image: url("https://res.cloudinary.com/dxnnbqdxy/image/upload/v1657401235/phoneImg_lmp283.jpg")
+  }
+
+  .welcometext {
+    font-size: 2.3rem;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    bottom: 28rem;
+    right: 7rem;
+    line-height: 3rem;
+    display: none;
+    /* margin-bottom: 1rem; */
+
+  }
+  .welcometext > div:nth-child(2) {
+    color: black;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}

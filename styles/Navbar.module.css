@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Josefin+Sans:wght@300&display=swap");
+.navbar {
+  width: 100%;
+  height: 90px;
+  /* background-color: blue; */
+  background-color: transparent;
+  display: flex;
+  /* justify-content: center; */
+  font-family: "Arimo", sans-serif;
+  z-index: 2;
+  position: fixed;
+  transition-timing-function: ease-out;
+  transition: 0.5s;
+}
+.navActive {
+  background-color: #15141f;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+  font-family: "Arimo", sans-serif;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-right: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+.links a {
+  text-decoration: none;
+  color: #b8c2c8;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin: 1rem 0 0 3rem;
+}
+
+.links a:hover {
+  color: #d35820;
+}
+
+.test {
+  /* border: 1px soild orange;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  width: 100%;
+  background-color: #181818;
+  text-decoration: none;
+  color: white;
+ display: flex;
+  border-top: 2px solid orange; */
+}
+
+.logo {
+  width: 20rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.mobileContainer {
+  display: none;
+}
+.mobileNav {
+  display: none;
+}
+@media (max-width: 900px) {
+  .links a {
+    font-size: 1rem;
+  }
+  .logo {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .links {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 70%;
+  }
+  .navActive {
+    display: none;
+    position: sticky;
+  }
+  .navbar {
+    display: none;
+  }
+  .mobileContainer {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+  }
+
+  .mobileContainer .hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    top: 1.7rem;
+    /* background-color: red; */
+  }
+
+  .test {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 105px;
+    right: 0px;
+    width: 100%;
+    background-color: #091323;
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid #d35820;
+  }
+  .test a {
+    /* padding-left: 15%; */
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0.7rem auto;
+    font-weight: bold;
+  }
+  .test a:hover {
+    color: #d35820;
+  }
+}
+

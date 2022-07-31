@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Poppins:wght@300&family=Roboto:wght@100;300;400&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  /* background-color: #f3f5f7; */
+  background-image: url("https://res.cloudinary.com/dxnnbqdxy/image/upload/v1658058622/cesar-couto-pC2xOplxsVs-unsplash_pa1lop.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.664);
+  text-decoration: none;
+ }
+
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+
+}
